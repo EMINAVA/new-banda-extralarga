@@ -1,7 +1,7 @@
 <script>
     import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
-    import FaFacebookF from "svelte-icons/fa/FaInstagram.svelte";
-    import FaTwitter from "svelte-icons/fa/FaInstagram.svelte";
+    import FaFacebookF from "svelte-icons/fa/FaFacebookF.svelte";
+    import FaTwitter from "svelte-icons/fa/FaTwitter.svelte";
     import IoMdMusicalNote from "svelte-icons/io/IoMdMusicalNote.svelte";
     import Button from "./Button.svelte";
 

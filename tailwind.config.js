@@ -1,5 +1,8 @@
 module.exports = {
-    purge: ["./index.html", "./src/**/*.{svelte,js,ts}"],
+    purge: {
+        content: ["./index.html", "./src/**/*.{svelte,js,ts}"],
+        safeList: ["bg-accent", "accent"]
+    },
     darkMode: "class", // or 'media' or 'class'
     theme: {
         extend: {
