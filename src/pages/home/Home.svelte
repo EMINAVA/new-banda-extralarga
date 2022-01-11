@@ -5,7 +5,9 @@
     import BudgetChart from "./BudgetChart.svelte";
     import UsedBudgetChart from "./UsedBudgetChart.svelte";
     import MdDescription from "svelte-icons/md/MdDescription.svelte"
-    import { MdDateRange, MdInfo, MdPerson } from "svelte-icons/md";
+    import MdDateRange from "svelte-icons/md/MdDateRange.svelte";
+    import MdInfo from "svelte-icons/md/MdInfo.svelte";
+    import MdPerson from "svelte-icons/md/MdPerson.svelte";
 </script>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
   <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 3xl:col-span-4 row-span-3">

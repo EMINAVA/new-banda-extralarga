@@ -1,10 +1,8 @@
 <script>
-    import {
-        FaInstagram,
-        FaFacebookF,
-        FaTwitter
-    } from "svelte-icons/fa";
-    import { IoMdMusicalNote } from "svelte-icons/io"
+    import FaInstagram from "svelte-icons/fa/FaInstagram.svelte";
+    import FaFacebookF from "svelte-icons/fa/FaInstagram.svelte";
+    import FaTwitter from "svelte-icons/fa/FaInstagram.svelte";
+    import IoMdMusicalNote from "svelte-icons/io/IoMdMusicalNote.svelte";
     import Button from "./Button.svelte";
 
     const socials = [
