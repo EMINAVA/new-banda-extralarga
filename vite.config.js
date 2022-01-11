@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => ({
     root: "public/",
     build: {
         minify: mode === "production",
-        outDir: "dist/main.js",
+        outDir: "",
     },
     optimizeDeps: { include: ['@carbon/charts'] },
 }));

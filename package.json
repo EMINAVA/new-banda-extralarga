@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview --host"
+    "serve": "vite preview --host",
+    "start": "vite preview"
   },
   "devDependencies": {
     "@carbon/charts": "^0.54.2",
