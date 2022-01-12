@@ -1,0 +1,5 @@
+bg-accent
+navbar-link-dark
+navbar-link
+bg-navbar-link-dark
+bg-navbar-link
