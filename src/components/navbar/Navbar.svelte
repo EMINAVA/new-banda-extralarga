@@ -1,7 +1,6 @@
 <script>
     import MdExpandMore from "svelte-icons/md/MdExpandMore.svelte"
     import Button from "../Button.svelte";
-    import { elasticOut } from 'svelte/easing';
     import MobileMenu from "./MobileMenu.svelte";
     import pages from "./pages";
     import { darkMode } from "../../lib/stores";
@@ -14,17 +13,6 @@
         $darkMode = $darkMode === "dark" ? "light" : "dark";
         console.log($darkMode)
     }
-
-    function rotate(node, { duration }) {
-        return {
-            duration,
-            css: t => {
-                const eased = elasticOut(t);
-
-                return ``
-            }
-        }
-    }
 </script>
 
 <nav class="w-full bg-navbar-background dark:bg-navbar-background-dark shadow-lg overflow-hidden">
@@ -36,9 +24,9 @@
         <img src="/img/logo.jpg" alt="Logo" class="h-4/6 mr-2 rounded-md block">
       </div>
       <!-- Primary Navbar items -->
-      <div class="hidden md:flex items-center space-x-1">
+      <div class="hidden md:inline-flex flex-row items-center space-x-7">
         {#each pages as { href, name }}
-          <Button useLink bgDark="navbar-link-dark" bg="navbar-link" href={href} class="mr-5">
+          <Button useLink bgDark="navbar-link-dark" bg="navbar-link" href={href}>
             {name}
           </Button>
         {/each}
