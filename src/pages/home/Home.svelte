@@ -4,11 +4,13 @@
 
     import BudgetChart from "./BudgetChart.svelte";
     import UsedBudgetChart from "./UsedBudgetChart.svelte";
-    import MdDescription from "svelte-icons/md/MdDescription.svelte"
+    import MdDescription from "svelte-icons/md/MdDescription.svelte";
     import MdDateRange from "svelte-icons/md/MdDateRange.svelte";
     import MdInfo from "svelte-icons/md/MdInfo.svelte";
     import MdPerson from "svelte-icons/md/MdPerson.svelte";
 </script>
+
+<svelte:title>Banda Extralarga</svelte:title>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
   <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 3xl:col-span-4 row-span-3">
     <BudgetChart/>
@@ -25,11 +27,12 @@
     </div>
     <p class="flex-grow mt-5">
       Il progetto è stato preso in carico dall’azienda Open Fiber. Il divario digitale del Paese appare ben evidente: la
-      quota di abbonamenti almeno a 100 Megabit per secondo in Italia si attesta intorno al 14%, rispetto ad una media
-      europea che sfiora il 26%.
-      Gli operatori hanno fornito i dati per ciascun indirizzo civico – oltre 19,8 milioni – ricadente nelle aree grigie
+      quota di abbonamenti almeno a 100 Megabit per secondo in Italia si
+      attesta intorno al 14%, rispetto ad una media europea che sfiora il 26%. Gli operatori hanno fornito i dati per
+      ciascun indirizzo civico – oltre 19,8 milioni – ricadente nelle aree grigie
       e nere in 4.250 comuni italiani per 25,8 milioni di unità immobiliari. I rimanenti 12 milioni di indirizzi civici,
-      in oltre 6.700 comuni italiani sono oggetto dell’intervento pubblico nelle cosiddette aree bianche.
+      in oltre 6.700 comuni italiani sono oggetto dell’intervento pubblico
+      nelle cosiddette aree bianche.
     </p>
   </div>
   <div class="card order-2 bg-white dark:bg-navbar-background-dark col-span-3 row-span-2 flex flex-col px-6">
@@ -41,9 +44,9 @@
     </div>
     <p class="flex-grow mt-5">
       Il progetto “Grande Progetto Banda Ultra Larga” ha lo scopo di portare una connessione a banda ultra larga in
-      tutte le zone bianche della Lombardia. Una zona bianca è una zona dove l’investimento da parte degli Internet
-      Service Providers non è economicamente conveniente, e quindi le connessioni rimangono quelle ADSL che si usavano
-      nel passato.
+      tutte le zone bianche della Lombardia. Una zona bianca è una zona dove
+      l’investimento da parte degli Internet Service Providers non è economicamente conveniente, e quindi le connessioni
+      rimangono quelle ADSL che si usavano nel passato.
     </p>
   </div>
   <div class="card order-1 bg-white dark:bg-navbar-background-dark col-span-3 row-span-2 flex flex-col px-6">
@@ -55,8 +58,8 @@
     </div>
     <p class="flex-grow mt-5">
       Il grande progetto banda ultra larga porterà una connessione a banda ultra larga nei paesi dove non è ancora
-      presente. Il progetto fornisce a questi paesi un servizio ormai fondamentale in questa società digitale, ed è
-      giusto che tutti ne abbiano accesso.
+      presente. Il progetto fornisce a questi paesi un servizio ormai fondamentale in
+      questa società digitale, ed è giusto che tutti ne abbiano accesso.
     </p>
   </div>
   <div class="card order-4 bg-white dark:bg-navbar-background-dark col-span-3 flex flex-col px-6 3xl:col-span-4">
