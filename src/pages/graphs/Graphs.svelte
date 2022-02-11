@@ -1,3 +1,4 @@
+<svelte:head><title>Grafici</title></svelte:head>
 <script>
     import BudgetChart from "../home/BudgetChart.svelte";
     import UsedBudgetChart from "../home/UsedBudgetChart.svelte";
@@ -14,7 +15,6 @@
     const dataInterventi = [{ group: "In concessione", value: 7438 }, { group: "Diretti", value: 661 }]
 </script>
 
-<svelte:title>Grafici</svelte:title>
 <div class="grid grid-cols-3 md:grid-cols-6 gap-6">
   <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 row-span-3">
     <BudgetChart/>

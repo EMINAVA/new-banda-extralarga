@@ -1,3 +1,4 @@
+<svelte:head><title>Banda Extralarga</title></svelte:head>
 <script>
     import "@carbon/charts/styles.min.css";
     import "carbon-components/css/carbon-components.min.css";
@@ -10,7 +11,6 @@
     import MdPerson from "svelte-icons/md/MdPerson.svelte";
 </script>
 
-<svelte:title>Banda Extralarga</svelte:title>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
   <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 3xl:col-span-4 row-span-3">
     <BudgetChart/>

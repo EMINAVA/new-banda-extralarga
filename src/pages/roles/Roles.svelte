@@ -1,3 +1,4 @@
+<svelte:head><title>Ruoli</title></svelte:head>
 <script xmlns:svelte="http://www.w3.org/1999/html">
     import "@carbon/charts/styles.min.css";
     import "carbon-components/css/carbon-components.min.css";
@@ -6,8 +7,6 @@
     import MdInfo from "svelte-icons/md/MdInfo.svelte";
     import MdPerson from "svelte-icons/md/MdPerson.svelte";
 </script>
-
-<svelte:title>Ruoli</svelte:title>
 <!--<div>-->
 <div class="font-bold text-center text-5xl mb-6">BANDA ULTRA LARGA</div>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
