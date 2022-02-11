@@ -10,7 +10,7 @@
 <!--<div>-->
   <div class="font-bold text-center text-5xl mb-6">BANDA ULTRA LARGA</div>
   <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
-    <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-4 row-span-1 flex flex-col px-6">
+    <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-4 row-span-1 flex flex-col px-6">
       <div class="grid grid-cols-7 items-center justify-between">
         <div class="flex">
           <span class="h-10 flex items-start"><MdDescription/></span>
@@ -38,7 +38,7 @@
         </li>
       </ul>
     </div>
-    <div class="card order-2 bg-white dark:bg-navbar-background-dark col-span-3 row-span-1 flex flex-col px-6">
+    <div class="card order-2 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-3 row-span-1 flex flex-col px-6">
       <div class="grid grid-cols-3 items-center justify-between">
         <div class="flex">
           <span class="h-10 flex items-start"><MdDescription/></span>
@@ -52,7 +52,7 @@
         nel passato.
       </p>
     </div>
-    <div class="card order-4 bg-white dark:bg-navbar-background-dark col-span-6 row-span-2 flex flex-col px-6">
+    <div class="card order-4 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-6 row-span-2 flex flex-col px-6">
       <div class="grid grid-cols-7 items-center">
         <div class="flex">
           <span class="h-10 flex items-start"><MdPerson/></span>
@@ -75,7 +75,7 @@
           <li>Bortolami-designer: si occupa delle parti grafiche del progetto;</li>
         </ul>
     </div>
-    <div class="card order-3 bg-white dark:bg-navbar-background-dark col-span-3 row-span-1">
+    <div class="card order-3 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-3 row-span-1">
       <!-- svelte-ignore a11y-media-has-caption -->
       <video class="h-96 m-auto" height="400" controls>
         <source type="video/mp4" src="/img/intro_video.mp4">
@@ -138,6 +138,12 @@
 </div>-->
 <style lang="postcss">
   @tailwind components;
+
+  @media screen and (max-width: 480px) {
+   .card {
+      column-span: 5;
+   }
+}
 
   .card {
       @apply flex justify-between  py-4 rounded-lg shadow-lg;
