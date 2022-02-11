@@ -10,7 +10,7 @@
 <!--<div>-->
   <div class="font-bold text-center text-5xl mb-6">BANDA ULTRA LARGA</div>
   <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
-    <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 3xl:col-span-4 row-span-1 flex flex-col px-6">
+    <div class="card order-first bg-white dark:bg-navbar-background-dark col-span-4 row-span-1 flex flex-col px-6">
       <div class="grid grid-cols-7 items-center justify-between">
         <div class="flex">
           <span class="h-10 flex items-start"><MdDescription/></span>
