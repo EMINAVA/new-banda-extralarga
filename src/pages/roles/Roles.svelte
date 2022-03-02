@@ -47,12 +47,12 @@
       </div>
       <span class="w-full text-center font-bold text-2xl ">Descrizione</span>
     </div>
-    <p class="flex-grow mt-5">
+    <span class="flex-grow mt-5">
       Il progetto “Grande Progetto Banda Ultra Larga” ha lo scopo di portare una connessione a banda ultra larga in
       tutte le zone bianche della Lombardia. Una zona bianca è una zona dove l’investimento da parte degli Internet
       Service Providers non è economicamente conveniente, e quindi le connessioni rimangono quelle ADSL che si usavano
       nel passato.
-    </p>
+    </span>
   </div>
   <div
     class="card order-4 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-6 row-span-2 flex flex-col px-6">
