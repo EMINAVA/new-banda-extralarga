@@ -4,6 +4,7 @@ let mode = localStorage.getItem("darkMode") ?? "light";
 
 const darkMode = writable(mode);
 
-darkMode.subscribe(m => localStorage.setItem("darkMode", m));
+darkMode.subscribe((m) => localStorage.setItem("darkMode", m));
 
 export { darkMode };
+export const user = writable(null);
