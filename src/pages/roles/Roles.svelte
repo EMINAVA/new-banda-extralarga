@@ -11,7 +11,6 @@
 <!--<div>-->
 <div class="font-bold text-center text-5xl mb-6">BANDA ULTRA LARGA</div>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
-    <!-- QUELLO GRANDE -->
     <div
         class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-4 row-span-1 flex flex-col px-6"
     >
@@ -43,26 +42,26 @@
             </li>
         </ul>
     </div>
-    <span class="flex-grow mt-5">
-        Il progetto “Grande Progetto Banda Ultra Larga” ha lo scopo di portare
-        una connessione a banda ultra larga in tutte le zone bianche della
-        Lombardia. Una zona bianca è una zona dove l’investimento da parte degli
-        Internet Service Providers non è economicamente conveniente, e quindi le
-        connessioni rimangono quelle ADSL che si usavano nel passato.
-    </span>
-</div>
-<div
-    class="card order-4 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-6 row-span-2 flex flex-col px-6"
->
-    <div class="grid grid-cols-7 items-center">
-        <div class="flex">
-            <span class="h-10 flex items-start"><MdPerson /></span>
+    <div
+        class="card order-2 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-3 row-span-1 flex flex-col px-6"
+    >
+        <div class="grid grid-cols-3 items-center justify-between">
+            <div class="flex">
+                <span class="h-10 flex items-start"><MdDescription /></span>
+            </div>
+            <span class="w-full text-center font-bold text-2xl "
+                >Descrizione</span
+            >
         </div>
-        <span class="w-full text-center font-bold text-2xl col-span-5"
-            >Chi siamo?</span
-        >
+        <span class="flex-grow mt-5">
+            Il progetto “Grande Progetto Banda Ultra Larga” ha lo scopo di
+            portare una connessione a banda ultra larga in tutte le zone bianche
+            della Lombardia. Una zona bianca è una zona dove l’investimento da
+            parte degli Internet Service Providers non è economicamente
+            conveniente, e quindi le connessioni rimangono quelle ADSL che si
+            usavano nel passato.
+        </span>
     </div>
-    <!-- FINE QUELLO PICCOLO -->
     <div
         class="card order-4 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-6 row-span-2 flex flex-col px-6"
     >
