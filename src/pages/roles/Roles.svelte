@@ -8,24 +8,23 @@
 </script>
 
 <svelte:head><title>Ruoli</title></svelte:head>
-<!--<div>-->
-<div class="font-bold text-center text-5xl mb-6">BANDA ULTRA LARGA</div>
+<div class="font-bold text-center text-5xl mb-6 my-0">BANDA ULTRA LARGA</div>
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
     <div
         class="card order-first bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-4 row-span-1 flex flex-col px-6"
     >
         <div class="grid grid-cols-7 items-center justify-between">
             <div class="flex">
-                <span class="h-10 flex items-start"><MdDescription /></span>
+                <span class="h-10 flex items-start"><MdInfo/></span>
             </div>
             <span class="w-full text-center font-bold text-2xl col-span-5"
-                >Descrizione</span
+                >Progetto</span
             >
         </div>
         <span class="block mb-1 flex-grow mt-5">
             Il progetto banda ultra larga ha lo scopo di servire l'intero
             territorio italiano di connessione a banda ultra larga nelle zone
-            dove ancora non è presentel Piano nazionale per la banda ultralarga
+            dove ancora non è presente. Il Piano nazionale per la banda ultralarga
             prevede un intervento pubblico che investe il territorio nazionale
             distinguendo tra:
         </span>
@@ -108,7 +107,7 @@
         class="card order-3 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-3 row-span-1">
 
         <!-- svelte-ignore a11y-media-has-caption -->
-        <video class="h-96 m-auto" height="400" controls>
+        <video class="h-96 m-auto rounded-lg" height="400" controls>
             <source type="video/mp4" src="/img/intro_video.mp4" />
         </video>
 
@@ -117,7 +116,7 @@
     <div
     class="card order-5 bg-white dark:bg-navbar-background-dark col-span-3 xl:col-span-6 row-span-2">
 
-        <iframe width="640" height="450" class="m-auto" src="https://www.youtube.com/embed/rkhVsPsE6DA" title="YouTube video player" frameborder="0" 
+        <iframe width="640" height="450" class="m-auto rounded-lg" src="https://www.youtube.com/embed/rkhVsPsE6DA" title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
