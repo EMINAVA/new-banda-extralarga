@@ -2,7 +2,7 @@
     import Button from "../Button.svelte";
     import { slide } from "svelte/transition";
     import { onMount } from "svelte";
-    import pages from "./pages";
+    import pages from "../../lib/pages";
     import { createEventDispatcher } from "svelte";
 
     const dispatcher = createEventDispatcher();

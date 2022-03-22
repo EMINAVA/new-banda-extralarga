@@ -1,0 +1,82 @@
+[
+  {
+    "region_id": 13,
+    "region_name": "Abruzzo"
+  },
+  {
+    "region_id": 17,
+    "region_name": "Basilicata"
+  },
+  {
+    "region_id": 18,
+    "region_name": "Calabria"
+  },
+  {
+    "region_id": 15,
+    "region_name": "Campania"
+  },
+  {
+    "region_id": 8,
+    "region_name": "Emilia Romagna"
+  },
+  {
+    "region_id": 6,
+    "region_name": "Friuli Venezia Giulia"
+  },
+  {
+    "region_id": 12,
+    "region_name": "Lazio"
+  },
+  {
+    "region_id": 7,
+    "region_name": "Liguria"
+  },
+  {
+    "region_id": 3,
+    "region_name": "Lombardia"
+  },
+  {
+    "region_id": 11,
+    "region_name": "Marche"
+  },
+  {
+    "region_id": 14,
+    "region_name": "Molise"
+  },
+  {
+    "region_id": 1,
+    "region_name": "Piemonte"
+  },
+  {
+    "region_id": 16,
+    "region_name": "Puglia"
+  },
+  {
+    "region_id": 20,
+    "region_name": "Sardegna"
+  },
+  {
+    "region_id": 19,
+    "region_name": "Sicilia"
+  },
+  {
+    "region_id": 9,
+    "region_name": "Toscana"
+  },
+  {
+    "region_id": 21,
+    "region_name": "Trentino Alto Adige"
+  },
+  {
+    "region_id": 10,
+    "region_name": "Umbria"
+  },
+  {
+    "region_id": 2,
+    "region_name": "Valle d'Aosta"
+  },
+  {
+    "region_id": 5,
+    "region_name": "Veneto"
+  }
+];
