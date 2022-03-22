@@ -94,10 +94,6 @@
         {/if}
       </span>
     </div>
-
-    <div class="flex flex-row-reverse md:col-span-3">
-      <Button>Invia</Button>
-    </div>
   </div>
 </div>
 
