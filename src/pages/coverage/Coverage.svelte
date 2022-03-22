@@ -1,6 +1,7 @@
 <svelte:head><title>Controlla copertura</title></svelte:head>
 <script>
 
+    import { MdInfo } from "svelte-icons/md";
 </script>
 
 <div>
