@@ -1,31 +1,119 @@
 <svelte:head><title>Controlla copertura</title></svelte:head>
 <script>
-
     import { MdInfo } from "svelte-icons/md";
+    import Button from "../../components/Button.svelte";
+    import { getCities, getUrl, regions, searchAddress } from "../../lib/copertura";
+
+    let selectedRegion = null;
+    let cities;
+    let selectedCity = null;
+    let address;
+    let results;
+
+    $: updateCities(selectedRegion);
+    $: getResults(address);
+
+    async function updateCities() {
+        selectedRegion && (cities = await getCities(selectedRegion));
+        selectedRegion && address && (await getResults())
+    }
+
+    async function getResults() {
+        if (!selectedRegion || !selectedCity || !address) return;
+        results = await searchAddress(selectedRegion, selectedCity, address);
+        console.log(results)
+    }
 </script>
 
 <div>
   <div class="font-bold text-center text-5xl mb-6 my-0">CONTROLLO COPERTURA</div>
-  <div class="grid grid-cols-3 md:grid-cols-1 gap-6">
-    <div class="card order-3 bg-white dark:bg-navbar-background-dark col-span-3 row-span-2 flex flex-col px-6">
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="card bg-white dark:bg-navbar-background-dark flex flex-col px-6">
       <div class="grid grid-cols-7 items-center justify-between">
         <div class="flex">
           <span class="h-10 flex items-start"><MdInfo/></span>
         </div>
-        <span class="w-full text-center font-bold text-2xl col-span-5">Dati di Contesto</span>
+        <span class="w-full text-center font-bold text-2xl col-span-5">Regione</span>
       </div>
-      <p class="flex-grow mt-5">
-        Il progetto è stato preso in carico dall’azienda Open Fiber. Il divario digitale del Paese appare ben
-        evidente: la
-        quota di abbonamenti almeno a 100 Megabit per secondo in Italia si
-        attesta intorno al 14%, rispetto ad una media europea che sfiora il 26%. Gli operatori hanno fornito i
-        dati per
-        ciascun indirizzo civico – oltre 19,8 milioni – ricadente nelle aree grigie
-        e nere in 4.250 comuni italiani per 25,8 milioni di unità immobiliari. I rimanenti 12 milioni di
-        indirizzi civici,
-        in oltre 6.700 comuni italiani sono oggetto dell’intervento pubblico
-        nelle cosiddette aree bianche.
-      </p>
+      <span class="flex-grow mt-5 p-2">
+        <select bind:value={selectedRegion} name="region" id="region" class="w-full input">
+          {#each regions as region }
+            <option value={region}>{region.region_name}</option>
+          {/each}
+        </select>
+      </span>
+    </div>
+
+    <div class="card bg-white dark:bg-navbar-background-dark flex flex-col px-6">
+      <div class="grid grid-cols-7 items-center justify-between">
+        <div class="flex">
+          <span class="h-10 flex items-start"><MdInfo/></span>
+        </div>
+        <span class="w-full text-center font-bold text-2xl col-span-5">Comune</span>
+      </div>
+      <span class="flex-grow mt-5 p-2">
+        {#if cities}
+          <select bind:value={selectedCity} name="city" id="city" class="w-full input">
+            {#each cities as city }
+              <option value={city}>{city.city_name}</option>
+            {/each}
+          </select>
+        {/if}
+      </span>
+    </div>
+
+    <div class="card bg-white dark:bg-navbar-background-dark flex flex-col px-6">
+      <div class="grid grid-cols-7 items-center justify-between">
+        <div class="flex">
+          <span class="h-10 flex items-start"><MdInfo/></span>
+        </div>
+        <span class="w-full text-center font-bold text-2xl col-span-5">Indirizzo</span>
+      </div>
+      <span class="flex-grow mt-5 p-2">
+        {#if selectedCity}
+          <input type="text" bind:value={address} class="w-full input p-3">
+        {/if}
+      </span>
+    </div>
+
+    <div class="card bg-white dark:bg-navbar-background-dark flex flex-col px-6 md:col-span-3">
+      <div class="grid grid-cols-7 items-center justify-between">
+        <div class="flex">
+          <span class="h-10 flex items-start"><MdInfo/></span>
+        </div>
+        <span class="w-full text-center font-bold text-2xl col-span-5">Risultati</span>
+      </div>
+      <span class="flex-grow mt-5 flex flex-row flex-wrap min-h-5">
+        {#if results}
+          {#each results as result }
+            <Button
+              on:click={window.location = getUrl(selectedRegion, selectedCity, result)}
+              class="ml-4 mb-2">{result.indirizzo_compl}</Button>
+          {/each}
+        {/if}
+      </span>
+    </div>
+
+    <div class="flex flex-row-reverse md:col-span-3">
+      <Button>Invia</Button>
     </div>
   </div>
 </div>
+
+
+<style lang="postcss">
+    @tailwind components;
+
+    .card {
+        @apply flex justify-between  py-4 rounded-lg shadow-lg;
+
+    @screen md {
+        @apply space-x-6;
+    }
+    }
+
+    .input {
+        @apply rounded-xl p-3 bg-gray-200;
+    }
+</style>

@@ -1,9 +1,8 @@
 import regions from "./regions.json";
-import { c } from "../../dist/assets/vendor.f7ca7b2c";
 
-async function getCities(regionId) {
+async function getCities({ region_id }) {
     try {
-        const res = await fetch(`https://bandaultralarga.italia.it/wp-json/bul/v1/region/${regionId}/cities`)
+        const res = await fetch(`https://bandaultralarga.italia.it/wp-json/bul/v1/region/${region_id}/cities`)
         return await res.json();
     } catch (e) {
         console.log("Error retrieving cities: ", e);
@@ -11,10 +10,10 @@ async function getCities(regionId) {
     }
 }
 
-async function searchAddress(regionName, cityId, address) {
+async function searchAddress({ region_name }, { city_id }, address) {
     const params = new URLSearchParams({
-        region: regionName,
-        city: cityId,
+        region: region_name,
+        city: city_id,
         address: address
     });
     try {
@@ -26,4 +25,8 @@ async function searchAddress(regionName, cityId, address) {
     }
 }
 
-export { regions, getCities, searchAddress };
+function getUrl({ region_id }, { city_id }, { id_egon }) {
+    return `https://bandaultralarga.italia.it/indirizzo/?address=region-${region_id}_city-${city_id}_street-${id_egon}`
+}
+
+export { regions, getCities, searchAddress, getUrl };
