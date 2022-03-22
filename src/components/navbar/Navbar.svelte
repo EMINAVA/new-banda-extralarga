@@ -2,7 +2,7 @@
     import MdExpandMore from "svelte-icons/md/MdExpandMore.svelte";
     import Button from "../Button.svelte";
     import MobileMenu from "./MobileMenu.svelte";
-    import pages from "./pages";
+    import pages from "../../lib/pages";
     import { darkMode, user } from "../../lib/stores";
     import { auth } from "../../lib/firebase";
     import {
