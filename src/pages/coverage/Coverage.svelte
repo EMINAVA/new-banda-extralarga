@@ -89,7 +89,7 @@
           {#each results as result }
             <Button
               on:click={window.location = getUrl(selectedRegion, selectedCity, result)}
-              class="ml-4 mb-2">{result.indirizzo_compl}</Button>
+              class="ml-4 mb-2 bg-yellow-600">{result.indirizzo_compl}</Button>
           {/each}
         {/if}
       </span>

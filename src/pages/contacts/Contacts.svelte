@@ -1,8 +1,7 @@
 <script xmlns:svelte="http://www.w3.org/1999/html">
     import "@carbon/charts/styles.min.css";
     import "carbon-components/css/carbon-components.min.css";
-    import MdInfo from "svelte-icons/md/MdInfo.svelte";
-    import MdPerson from "svelte-icons/md/MdPerson.svelte";
+    import MdContacts from "svelte-icons/md/MdContacts.svelte";
 </script>
 
 <svelte:head><title>Contatti</title></svelte:head>
@@ -12,14 +11,14 @@
     <div class="card bg-white dark:bg-navbar-background-dark xl:col-start-3 xl:col-end-9 col-span-5 xl:col-span-6 row-span-6 flex flex-col px-6">
         <div class="grid grid-cols-3 items-center justify-between">
             <div class="flex">
-                <span class="h-10 flex items-start"><MdInfo/></span>
+                <span class="h-10 flex items-start"><MdContacts/></span>
             </div>
             <span class="w-full text-center font-bold text-2xl "
             >Contattaci</span
             >
         </div>
         <span class="flex-grow mt-5 text">
-            Potete trovare molte informazioni inerenti al progetto sul sito, ma in caso di qualche altre domanda potete contattarci su:
+            Potete trovare molte informazioni inerenti al progetto sul sito, ma in caso aveste qualche altra domanda potete contattarci su:
             <ul class="list-disc list-inside m-2 ">
                 <li class="">
                     Tutti i nostri canali social che potete trovare in fondo al sito.
