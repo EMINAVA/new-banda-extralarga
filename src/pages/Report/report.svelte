@@ -9,7 +9,7 @@
 <div class="font-bold text-center text-5xl mb-6 my-0">REPORT</div>
 
 <div class="grid col-start-2 grid-cols-3 center md:grid-cols-6 3xl:grid-cols-10 gap-6">
-    <div class="card order-1 bg-white dark:bg-navbar-background-dark xl:col-start-2 xl:col-end-10 xl:col-span-8 row-span-2 flex flex-col px-6">
+    <div class="card order-1 bg-white dark:bg-navbar-background-dark xl:col-start-2 xl:col-end-10 col-span-8 row-span-2 flex flex-col px-6">
         <div class="grid grid-cols-7 items-center justify-between">
             <div class="flex">
                 <span class="h-10 flex items-start"><MdInfoOutline/></span>
