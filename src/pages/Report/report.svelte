@@ -33,7 +33,7 @@
       Per concludere la seconda fase abbiamo fatto dei video individuali in cui ognuno spiegava il proprio ruolo nel gruppo.
      Nella terza fase il project manager ha organizzato come sempre un piano di lavoro e delle scadenze per tutto il gruppo, invece lo storyteller, 
      il designer ed i coder hanno realizzato un video in cui presentavano  il sito; 
-     il blogger e il social media manager hanno diffuso sui social il report di monitoraggio realizzato su www.monithon.eu/it/.
+     il blogger e il social media manager hanno diffuso sui social il report di monitoraggio realizzato su <a href="www.monithon.eu/it/">www.monithon.eu/it/</a>.
     </p>
     </div>
 </div>
