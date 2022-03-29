@@ -12,5 +12,5 @@
       <svelte:component this={component}/>
     </div>
   </div>
-  <Footer />
+  <Footer/>
 </div>
