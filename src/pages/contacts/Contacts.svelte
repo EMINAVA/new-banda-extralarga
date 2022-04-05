@@ -29,7 +29,7 @@
     </div>
 
     <div
-      class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5 flex flex-col px-6">
+      class="card bg-white dark:bg-navbar-background-dark col-span-10 row-span-1 xl:col-span-5 flex flex-col px-6">
       <div class="grid grid-cols-3 items-center justify-between">
         <div class="flex">
           <span class="h-10 flex items-start"><MdContactMail/></span>
@@ -52,6 +52,12 @@
         Il nostro social media manager vi risponderà il più in fretta possibile!
       </span>
     </div>
+
+    <div class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5  flex-col px-6 row-span-2">
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <iframe src='https://www.juicer.io/api/feeds/banda-extra-larga/iframe' frameborder='0' width='400' height='400' style='display:block; margin:0 auto;'></iframe>
+    </div>
+
     <CommentCard cols="10" mdCols="10"/>
   </div>
 </div>
