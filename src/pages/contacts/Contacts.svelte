@@ -53,9 +53,9 @@
       </span>
     </div>
 
-    <div class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5  flex-col px-6 row-span-2">
+    <div class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5 flex-grow  flex-col px-6 row-span-2">
       <!-- svelte-ignore a11y-missing-attribute -->
-      <iframe src='https://www.juicer.io/api/feeds/banda-extra-larga/iframe' frameborder='0' width='350' height='400' style='display:block; margin:0 auto;'></iframe>
+      <iframe src='https://www.juicer.io/api/feeds/banda-extra-larga/iframe' frameborder='0' width='300' height='400' style='display:block; margin:0 auto;'></iframe>
     </div>
 
     <CommentCard cols="10" mdCols="10"/>
