@@ -10,6 +10,7 @@
     import wlConc from "./data/wireless_concessione.json"
     import fiberProgress from "./data/fiber_progress.json"
     import wirelessProgress from "./data/wireless_progress.json"
+    import CommentCard from "../../components/CommentCard.svelte";
 
     const dataCantieri = [{ group: "In concessione", value: 21697 }, { group: "Diretti", value: 658 }]
     const dataInterventi = [{ group: "In concessione", value: 7438 }, { group: "Diretti", value: 661 }]
@@ -43,6 +44,8 @@
   <div class="card bg-white dark:bg-navbar-background-dark col-span-3 md:col-span-6 row-span-2 px-8">
     <DataChart data={wlConc} title="Stato Interventi Wireless in Concessione"/>
   </div>
+
+  <CommentCard lgCols="6"/>
 </div>
 
 <style lang="postcss">
@@ -50,8 +53,9 @@
 
     .card {
         @apply flex justify-between  py-4 rounded-lg shadow-lg;
-        @screen md {
-            @apply space-x-6;
-        }
+
+    @screen md {
+        @apply space-x-6;
+    }
     }
 </style>

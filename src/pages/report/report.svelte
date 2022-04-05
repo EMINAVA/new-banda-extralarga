@@ -3,6 +3,7 @@
     import "carbon-components/css/carbon-components.min.css";
     import MdInfoOutline from "svelte-icons/md/MdInfoOutline.svelte";
     import MdVideocam from 'svelte-icons/md/MdVideocam.svelte'
+    import CommentCard from "../../components/CommentCard.svelte";
 </script>
 
 <svelte:head><title>Report</title></svelte:head>
@@ -60,12 +61,13 @@
         </div>
         <span class="w-full text-center font-bold text-2xl col-span-5">VIDEO REPORT</span>
       </div>
-      <iframe src="https://www.youtube.com/embed/7ssVU16Kdf4" title="YouTube video player"
+      <iframe src="https://www.youtube.com/embed/9Jh17V9cWBg" title="YouTube video player"
               class="w-full rounded-lg h-80"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
     </div>
+    <CommentCard/>
   </div>
 </div>
 

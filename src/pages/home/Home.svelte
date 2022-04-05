@@ -9,6 +9,7 @@
     import MdDateRange from "svelte-icons/md/MdDateRange.svelte";
     import MdInfo from "svelte-icons/md/MdInfo.svelte";
     import MdPerson from "svelte-icons/md/MdPerson.svelte";
+    import CommentCard from "../../components/CommentCard.svelte";
 </script>
 
 <div class="grid grid-cols-3 md:grid-cols-6 3xl:grid-cols-10 gap-6">
@@ -75,6 +76,7 @@
       Il progetto non è ancora stato completato per via di ritardi dovuti al covid.
     </p>
   </div>
+  <CommentCard/>
 </div>
 
 <style lang="postcss">
@@ -82,8 +84,9 @@
 
     .card {
         @apply flex justify-between  py-4 rounded-lg shadow-lg;
-        @screen md {
-            @apply space-x-6;
-        }
+
+    @screen md {
+        @apply space-x-6;
+    }
     }
 </style>

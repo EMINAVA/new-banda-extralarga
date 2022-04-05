@@ -5,6 +5,7 @@
     import MdDateRange from "svelte-icons/md/MdDateRange.svelte";
     import MdInfo from "svelte-icons/md/MdInfo.svelte";
     import MdPerson from "svelte-icons/md/MdPerson.svelte";
+    import CommentCard from "../../components/CommentCard.svelte";
 </script>
 
 <svelte:head><title>Ruoli</title></svelte:head>
@@ -123,6 +124,7 @@
               allowfullscreen></iframe>
 
     </div>
+    <CommentCard/>
   </div>
 </div>
 

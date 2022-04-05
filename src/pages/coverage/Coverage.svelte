@@ -3,6 +3,7 @@
     import { MdInfo } from "svelte-icons/md";
     import Button from "../../components/Button.svelte";
     import { getCities, getUrl, regions, searchAddress } from "../../lib/copertura";
+    import CommentCard from "../../components/CommentCard.svelte";
 
     let selectedRegion = null;
     let cities;
@@ -94,6 +95,8 @@
         {/if}
       </span>
     </div>
+
+    <CommentCard cols="1" mdCols="3" lgCols="3"/>
   </div>
 </div>
 

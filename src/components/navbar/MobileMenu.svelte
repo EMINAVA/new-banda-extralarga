@@ -10,7 +10,7 @@
     export let open = false;
 
     onMount(() => {
-        const mediaQuery = window.matchMedia('(min-width: 768px)')
+        const mediaQuery = window.matchMedia('(min-width: 1280px)')
         mediaQuery.addEventListener("change", (e) => e.matches && (open = false))
     });
 </script>

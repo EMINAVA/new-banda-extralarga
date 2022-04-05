@@ -6,37 +6,13 @@
     import FaInstagram from 'svelte-icons/fa/FaInstagram.svelte'
     import MdLocalPhone from 'svelte-icons/md/MdLocalPhone.svelte'
     import MdEmail from 'svelte-icons/md/MdEmail.svelte'
+    import CommentCard from "../../components/CommentCard.svelte";
 </script>
 
 <svelte:head><title>Contatti</title></svelte:head>
 
 <div>
   <div class="font-bold text-center text-5xl mb-6 my-0">I nostri contatti!</div>
-  <!--
-   <div class="grid col-start-2 grid-cols-3 center md:grid-cols-6 3xl:grid-cols-10 gap-6">
-    <div
-      class="card bg-white dark:bg-navbar-background-dark xl:col-start-3 xl:col-end-9 col-span-5 xl:col-span-6 row-span-6 flex flex-col px-6">
-      <div class="grid grid-cols-3 items-center justify-between">
-        <div class="flex">
-          <span class="h-10 flex items-start"><MdInfo/></span>
-        </div>
-        <span class="w-full text-center font-bold text-2xl ">Contattaci</span>
-      </div>
-      <span class="flex-grow mt-5 text">
-      Potete trovare molte informazioni inerenti al progetto sul sito, ma in caso di qualche altre domanda potete contattarci su:
-      <ul class="list-disc list-inside m-2 ">
-        <li class="">
-            Tutti i nostri canali social che potete trovare in fondo al sito.
-        </li>
-        <li>
-            Sulla nostra email: bandaextralarga@gmail.com
-        </li>
-      </ul>
-      Il nostro social media manager vi risponderà il più in fretta possibile!
-    </span>
-    </div>
-  </div>
-  -->
   <div class="grid grid-cols-10 gap-6">
     <div
       class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5 flex flex-col px-6 row-span-2">
@@ -76,6 +52,7 @@
         Il nostro social media manager vi risponderà il più in fretta possibile!
       </span>
     </div>
+    <CommentCard cols="10" mdCols="10"/>
   </div>
 </div>
 
