@@ -1,6 +1,6 @@
 <svelte:head><title>Controlla copertura</title></svelte:head>
 <script>
-    import { MdInfo } from "svelte-icons/md";
+    import MdInfo from "svelte-icons/md/MdInfo.svelte";
     import Button from "../../components/Button.svelte";
     import { getCities, getUrl, regions, searchAddress } from "../../lib/copertura";
     import CommentCard from "../../components/CommentCard.svelte";

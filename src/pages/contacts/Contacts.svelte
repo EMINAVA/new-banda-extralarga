@@ -24,8 +24,8 @@
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.055284948175!2d9.181145315752607!3d45.448542042508684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c408a3627611%3A0x41478e3a2be9ed7e!2sIndustrial%20Technical%20Institute%20G.%20Feltrinelli!5e0!3m2!1sen!2sit!4v1648574029676!5m2!1sen!2sit"
-        height="400" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="rounded-lg mt-3 mb-2"></iframe>
+        class="border-0 h-full rounded-lg mt-3 mb-2 min-h-50" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div
@@ -53,9 +53,8 @@
       </span>
     </div>
 
-    <div class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5 flex-grow  flex-col px-6 row-span-2">
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <iframe src='https://www.juicer.io/api/feeds/banda-extra-larga/iframe' frameborder='0' width='300' height='400' style='display:block; margin:0 auto;'></iframe>
+    <div class="card bg-white dark:bg-navbar-background-dark col-span-10 xl:col-span-5 flex-grow flex-col p-0 overflow-hidden">
+      <iframe src='https://www.juicer.io/api/feeds/banda-extra-larga/iframe' height="500" class="block w-full"></iframe>
     </div>
 
     <CommentCard cols="10" mdCols="10"/>

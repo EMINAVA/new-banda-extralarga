@@ -7,7 +7,8 @@ module.exports = {
     theme: {
         extend: {
             minHeight: {
-                '5': '50px'
+                '5': '50px',
+                '50': '500px'
             },
             screens: {
                 "3xl": "1280px",
